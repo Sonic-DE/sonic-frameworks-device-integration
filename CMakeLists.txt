@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.29)
+cmake_minimum_required(VERSION 3.30)
 
 set(KF_VERSION "6.30.0") # handled by release scripts
 project(Solid VERSION ${KF_VERSION})
@@ -21,8 +21,9 @@ include(KDEGitCommitHooks)
 include(ECMQtDeclareLoggingCategory)
 include(ECMDeprecationSettings)
 include(ECMGenerateQDoc)
+include(ECMInstalledLibraryCheck)
 
-set(REQUIRED_QT_VERSION 6.9.0)
+set(REQUIRED_QT_VERSION 6.10.0)
 find_package(Qt6 ${REQUIRED_QT_VERSION} CONFIG REQUIRED Xml Gui)
 
 
